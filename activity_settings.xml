@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamil Clock Customizer"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Color"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <RadioButton android:id="@+id/rb_txt_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="White" android:textColor="#FFF" android:checked="true" />
+            <RadioButton android:id="@+id/rb_txt_yellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yellow" android:textColor="#FFF" />
+            <RadioButton android:id="@+id/rb_txt_cyan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cyan" android:textColor="#FFF" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Background Color"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_bg_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <RadioButton android:id="@+id/rb_bg_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Black" android:textColor="#FFF" android:checked="true" />
+            <RadioButton android:id="@+id/rb_bg_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dark Blue" android:textColor="#FFF" />
+            <RadioButton android:id="@+id/rb_bg_maroon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Maroon" android:textColor="#FFF" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_alpha_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Background Opacity: 100%"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/sb_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="255"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save &amp; Update Widget"
+            android:backgroundTint="#00C853"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
